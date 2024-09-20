@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laboratorio_5</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <form action="https://15b9-190-69-59-150.ngrok-free.app/registrar-datos" method="post">
+        <label for="nombre">*Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese en nombre" required>
+
+        <label for="apellido">*Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" required>
+
+        <label for="Email">*Email:</label>
+        <input type="email" name="correo" id="Email" placeholder="Example@gmail.com" required>
+
+        <label for="contrasena">*contraseña:</label>
+        <input type="password" name="contraseña" id="contrasena" placeholder="Ingrese contraseña" minlength="4" required>
+
+        <label for="fecha">*fecha nacimiento:</label>
+        <input type="date" name="fecha" id="fecha" placeholder="Ingrese fecha" required>
+
+        <label for="sexo">*sexo femenino:</label>
+        <input type="radio" name="sexo" id="sexo" required>
+        <label for="sexo">*sexo masculino:</label>
+        <input type="radio" name="sexo" id="sexo" required>
+
+        <label for="problem">problema:</label>
+        <textarea name="problem" id="problem" rows="5" cols="30" maxlength="200"></textarea>
+
+        <label for="terminos">*Aceptar terminos:</label>
+        <input type="checkbox" name="terminos" id="terminos" required>
+
+
+        <button type="submit"> Envia</button>
+    </form>
+</body>
+</html>

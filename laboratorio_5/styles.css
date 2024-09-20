@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    padding:  15px;
+}
+
+label {
+    display: block;
+    margin: 10px, 0 , 5px;
+    font-weight: bold;
+}
+button {
+    display: block;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+form {
+    width: 400px;
+}
