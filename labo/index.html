@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LABORATORIO</title>
-</head>
-<body>
-    <form action=""></form>
-    <label for="">Nombres: </label>
-    <input type="text" name="Nombres">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Formulario de contacto</h1>
+        <form action="">
+        <label for="nombre">* Nombres: </label>
+        <input type="text" name="nombres" id="nombre" required="" />
 
-    <label for="">Apellidos: </label>
-    <input type="text" name="Apellidos">
+        <label for="apellido">* Apellidos: </label>
+        <input type="text" name="apellidos" id="apellido" required=""/>
 
-    <label for="">Correo Electronico: </label>
-    <input type="email" name="email">
+        <label for="email">* Correo Electronico: </label>
+        <input type="email" name="email" id="email" required=""/>
 
-    <label for="">Celular:</label>
-    <input type="tel" name="cel">
+        <label for="contrasena">* Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena" required="" minlength="8"/>
+        
+        <label>* Sexo:</label>
+        <input type="radio" name="sexo" id="sexo_femenino" value="femenino" required>
+        <label for="sexo_femenino">Femenino</label>
+        <input type="radio" name="sexo" id="sexo_masculino" value="masculino" required>
+        <label for="sexo_masculino">Masculino</label>
 
-    <label for="">Mensaje:</label>
-    <textarea name="mensaje" id=""></textarea>
+        <label for="celular">Celular:</label>
+        <input type="tel" name="celular" id="celular" maxlength="10" pattern="[0-9]{10}" title="Debe ingresar un número de teléfono de 10 dígitos"/>
 
-    <label for="">Pais:</label>
-    <select name="" id="">
-        <option value="" selected="" disabled="" >selecione un pais</option>
-        <option value="CO">colombia</option>
-        <option value="VZ">venezuela</option>
-        <option value="MX">mexico</option>
-        <option value="PR">peru</option>
-    </select>
-    
-</body>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="4" ></textarea>
+
+        <label for="pais">* Pais:</label>
+        <select name="pais" id="pais" required="">
+            <option value="" selected="" disabled="">selecione un pais</option>
+            <option value="CO">colombia</option>
+            <option value="VZ">venezuela</option>
+            <option value="MX">mexico</option>
+            <option value="PR">peru</option>
+        </select>
+
+        <label for="terminos">*Aceptar contactar:</label>
+        <input type="checkbox" name="terminos" id="terminos" required>
+
+        <input type="submit" value="Enviar">
+        <p> * Campo requerido ...</p>
+        </form>
+    </div>
+  </body>
 </html>
