@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 10</title>
+</head>
+<body>
+    <script>
+
+        //Parte 1
+        let nombre = "Juan";
+        let edad = 26;
+        let esEstudiante = true;
+
+        console.log("Nombre : ", nombre);
+        console.log("Edad : ", edad);
+        console.log("Es Estudiante : ", esEstudiante);
+
+        //parte 2
+        let a = 10;
+        let b = 3;
+
+        let suma = a + b; 
+        let resta = a- b;
+        let multiplicacion = a * b;
+        let division = a / b;
+
+        console.log(`\nLa suma de ${a} y ${b} es = `, suma);
+        console.log(`\nLa resta de ${a} y ${b} es = `, resta);
+        console.log(`\nLa multiplicacion de ${a} por ${b} es = `, multiplicacion);
+        console.log(`\nLa division de ${a} entre ${b} es = `, division);
+
+        console.log(`\n${a} es mayor ${b} : `, a > b);
+        console.log(`\n${a} es mayor o igual ${b} : `, a >= b);
+        console.log(`\n${a} es menor ${b} : `, a < b);
+        console.log(`\n${a} es menor o igual ${b} :`, a <= b);
+        console.log(`\n${a} es igual ${b} : `, a == b);
+        console.log(`\n${a} es diferente ${b} : `, a != b);
+
+        //parte 3
+        let esMayorDeEdad = false;
+        let tieneLicencia = true;
+        let puedeConducir =  esMayorDeEdad && tieneLicencia;
+
+        console.log("Puede conducir? :", puedeConducir);
+        
+        let errorDeConducir = esMayorDeEdad || tieneLicencia;
+        console.log("Puede conducir con errores? :", errorDeConducir);
+
+        //parte 4
+        let nombre1 = prompt("Ingrese su nombre => ");
+        let edad1 = parseInt(prompt("Ingrese su edad => "));
+        let esestuduante = prompt("Eres estudiante si/no? => ").toLowerCase() == "si";
+
+        console.log("Hola, ",nombre1, " su edad es ",edad1, " años");
+        
+        if(edad1 >= 18){
+            console.log("Usted es mayor de edad");
+        }else{
+            console.log("Usted es menor de edad");
+        } 
+
+        if(esestuduante){
+            console.log("udted tiene descuento..........")
+        }
+
+    </script>
+</body>
+</html>
