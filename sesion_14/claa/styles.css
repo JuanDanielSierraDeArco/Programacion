@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    background-color: rgb(18, 173, 121);
+    color: white;
+    padding: 1em 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 0;
+  }
+   
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 20px;
+    font-weight: 600;
+  }
+   
+  nav ul li a:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+   
+  main {  /* seguir regla quitamos div */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  section {
+    padding: 2em 0;
+    margin-top: 4em;
+    border-radius: 5px;  
+  }
+  #home {
+    height: 100vh;
+    background-color: beige;
+  }
+  #about {
+    height: 100vh;
+    background-color: beige;
+  }
+  #services {
+    height: 100vh;
+    background-color: beige;
+  }
+  #contact {
+    height: 100vh;
+    background-color: beige;
+  }
+   
+  footer {
+    background-color: rgb(18, 173, 121);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+    nav ul li a {
+      padding: 1em;
+      text-align: center;
+    }
+   
+    header #nav-toggle {  /* agregamos un selector mas */
+      display: block;
+    }
+    .nav-open {
+      display: flex;
+    }
+  }
+  #nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //verificacion de mayor de edad
+        let edad = parseInt(prompt("Ingrese su edad => "));
+        if (edad >= 18){
+            document.write("Usted es mayor de edad !");
+        }else{
+            document.write("Usted es menor de edad !");
+        };
+
+
+        // validar si un numero es mayor que cero, menor o igual
+        let numero = parseInt(prompt("Ingrese un numero => "));
+
+        if(numero > 0){
+            document.write("El numero es positivo");
+        }else if( numero < 0){
+            document.write("El numero es negativo");
+        }else{
+            document.write("El numero es cero");
+        };
+
+        // validar un usuario
+        let usuario = prompt("Ingrese un usuario => ");
+        let contrasena = prompt("Ingrese una una contraseña => ");
+
+        if(usuario == "juan" && contrasena=="1234"){
+            document.write("Acceso concedido");
+        }else{
+            document.write("Acceso denegado");
+        };
+
+        //validar precio
+        let edad1 = parseInt(prompt("Ingrese su edad => "));
+        let precio;
+
+        if(edad1 < 12){
+            precio = 5000;
+        }else if(edad1 >= 12 && edad1 < 65){
+            precio = 7000
+        } else {
+            precio = 6000;
+        };
+
+        document.write("El precio de ingreso es =>", precio);
+    </script>
+</body>
+</html>
