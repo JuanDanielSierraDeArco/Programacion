@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}   
+
+p {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; 
+    font-weight: bold;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover{
+    width: 100%;
+    background-color: #45a049;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1;
+}
+h1 {
+    text-align: center;
+}.sexo-container {
+    display: flex;
+    gap: 20px; /* Espacio entre las opciones */
+    margin-bottom: 15px; /* Espacio debajo del contenedor */
+}
+textarea {
+    resize: vertical;
+}

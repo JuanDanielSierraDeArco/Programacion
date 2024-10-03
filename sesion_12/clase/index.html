@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        // for o para
+        let numero = 10;
+        for (let i = 0; i < numero; i++){
+            document.write("Valor de i : ", i, "<br>");
+        };
+
+        //while o mientras
+        let contador = 1;
+        while (contador <= 5) {
+            document.write("Contador : ",contador, "<br>");  
+            contador += 1;         
+        };
+        //numero secreto
+        let numerose=7;
+        let intento;
+        do {
+            intento = prompt("Adivina el numero de 1 entre 10");
+        } while (intento != numerose);
+        document.write("Adivinaste  el numero secreto");
+
+    </script>
+</body>
+</html>
