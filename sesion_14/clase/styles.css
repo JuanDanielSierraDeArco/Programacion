@@ -10,3 +10,29 @@ header {
     padding: 1em;
     text-align: center;
 }
+main{
+    padding: 2em;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: rgb(9, 139, 9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 80, 5);
+}
+
+footer {
+    background-color: rgb(9, 139, 9);
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
