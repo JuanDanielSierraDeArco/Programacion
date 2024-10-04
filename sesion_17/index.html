@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Contraseña</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+ 
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+ 
+        input[type="password"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+ 
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="container">
+    <h2>Mostrar/Ocultar Contraseña</h2>
+    <input type="password" id="passwordInput" placeholder="Ingresa tu contraseña">
+    <label>
+        <input type="checkbox" id="showPassword"> Mostrar contraseña
+    </label>
+</div>
+ 
+<script>
+    const passwordInput = document.getElementById("passwordInput");
+    const showPassword = document.getElementById("showPassword");
+ 
+    showPassword.addEventListener("change", function() {
+        // Cambia el tipo de input entre 'text' y 'password'
+        if (showPassword.checked) {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    });
+</script>
+ 
+</body>
+</html>
