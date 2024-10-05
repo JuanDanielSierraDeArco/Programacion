@@ -58,9 +58,36 @@ header nav {
     justify-self: center;
     align-items: center;
 }
+section {
+    padding: 2em 0;
+    margin-top: 4em;
+    border-radius: 10px;
+    padding: 1em 2em;
+}
 
+main {
+    margin-top: 4em;
+    padding: 2em;
+    background-color: #0B2447;
+}
+#home {
+    height: 100vh;
+    background-color: #576CBC;
+}
 
+#about {
+    height: 100vh;
+    background-color: #576CBC;
+}
 
+#services {
+    height: 100vh;
+    background-color: #576CBC;
+}
+#contact {
+    height: 100vh;
+    background-color: #576CBC;
+}
 
 
 
