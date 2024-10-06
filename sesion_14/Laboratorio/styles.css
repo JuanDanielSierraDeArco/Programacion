@@ -99,23 +99,32 @@ footer {
     z-index: 1000;
     position: fixed;
 }
-
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
+        align-items: center;
         width: 100%;
         background-color: #19376D;
     }
+
     nav ul li a {
         padding: 1em;
         text-align: center;
     }
+
     #nav-toggle {
         display: block;
     }
+
     .nav-open ul {
         display: flex;
+    }
+
+    header img {
+        margin-left: 0.5em;
+        width: 80px;
+        height: 80px;
     }
 }
 #nav-toggle {
@@ -123,6 +132,6 @@ footer {
     background: none;
     border: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
 }
