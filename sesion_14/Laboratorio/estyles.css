@@ -1,23 +1,23 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 header {
-    background-color: #19376D;
+    background-color: #19376d;
     color: white;
     padding: 1em 0;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    position: fixed;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto; //quitar auto
+    margin: 0;
     padding: 0 1em;
 }
 nav ul {
@@ -40,17 +40,15 @@ nav ul li a {
     padding: 0.5em 1em;
 }
 nav ul li a:hover {
-  background-color: #576CBC;
-  border-radius: 5px;
+    background-color: #555;
+    border-radius: 5px;
 }
-
 header nav {
-    flex-grow: 2;
     display: flex;
-    justify-self: center;
+    flex-grow: 2;
+    justify-self: center;align-items: center;
     align-items: center;
 }
-
 #nav-toggle {
     display: none;
     background: none;
@@ -59,38 +57,17 @@ header nav {
     font-size: 1.5em;
     cursor: pointer;
 }
-
+main {
+    margin-top: 4em;
+    padding: 2em;
+    background-color: #0b2447;
+}
 section {
     padding: 2em 0;
     margin-top: 4em;
     border-radius: 10px;
     padding: 1em 2em;
 }
-
-main {
-    margin-top: 4em;
-    padding: 2em;
-    background-color: #0B2447;
-}
-#home {
-    height: 100vh;
-    background-color: #576CBC;
-}
-
-#about {
-    height: 100vh;
-    background-color: #576CBC;
-}
-
-#services {
-    height: 100vh;
-    background-color: #576CBC;
-}
-#contact {
-    height: 100vh;
-    background-color: #576CBC;
-}
-
 footer {
     text-align: center;
     background-color: #19376D;
@@ -101,7 +78,9 @@ footer {
     z-index: 1000;
     position: fixed;
 }
-@media (max-width: 768px) {
+
+/* Responsive Design */
+@media (max-width: 768px) {   
     nav ul {
         display: none;
         flex-direction: column;
@@ -109,8 +88,9 @@ footer {
         width: 100%;
         background-color: #19376D;
     }
-    
-
+    nav ul li {
+        font-size: 20px;
+    }
     nav ul li a {
         padding: 1em;
         text-align: center;
@@ -123,27 +103,34 @@ footer {
     .nav-open ul {
         display: flex;
     }
-
-    header img {
-        margin-left: 0.5em;
-        width: 80px;
-        height: 80px;
-    }
 }
-#nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
+#home{
+height: 100vh;
+background-color: #576cbc;
+}
+#about{
+height: 100vh;
+background-color: #576cbc;
+}
+#services{
+height: 100vh;
+background-color: #576cbc;
+}
+#contact{
+height: 100vh;
+background-color: #576cbc;
 }
 
-img {
+header div {
+    margin-left: 3em;
+}
+
+#logo {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
-header div {
-    margin-right: 3em;
+
+#button1 {
+    background-image: none;
 }
