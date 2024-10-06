@@ -89,26 +89,32 @@ main {
     background-color: #576CBC;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    text-align: center;
+    background-color: #19376D;
+    color: white;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    position: fixed;
+}
 
 @media (max-width: 768px) {
     nav ul {
+        display: none;
         flex-direction: column;
-        gap: 0;
-        align-items: flex-start;
-    }
-    nav ul li {
         width: 100%;
+ 
+    }
+    nav ul li a {
+        padding: 1em;
+        text-align: center;
+    }
+    #nav-toggle {
+        display: block;
+    }
+    .nav-open ul {
+        display: flex;
     }
 }
