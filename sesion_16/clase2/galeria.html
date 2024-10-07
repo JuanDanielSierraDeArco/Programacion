@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+    <style>
+        .galeria{
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #grande {
+            width: 500px;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <script>
+        function mostrargrande(src){
+            document.getElementById('grande').src=src;
+        }
+    </script>
+</head>
+<body>
+    <h1>Galeria de Imagenes</h1>
+    <div class="galeria">
+        <img src="gato.jpg" onclick="mostrargrande(this.src)" alt="" width="400px"  height="400px">
+        <img src="gato 2 (1).jpg" onclick="mostrargrande(this.src)" alt="" width="400px"  height="400px">
+        <img src="pexels-kerber-774731 (1).jpg" onclick="mostrargrande(this.src)" alt="" width="400px"  height="400px"> 
+    </div>
+    <img id="grande" src="" alt="">
+</body>
+</html> 

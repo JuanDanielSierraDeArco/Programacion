@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Formulario</title>
+
+    <script>
+        function Validar(){
+            let nombre = document.getElementById('nombre').value;
+            if (nombre == ""){
+                alert("El nombre es obigatoeio");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return Validar()">
+        <label for="nombre">Nombre :</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br>
+        <br>
+
+        <label for="edad">Edad :</label>
+        <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required ><br>
+        <br>
+ 
+        <button type="submit">Registrar</button>
+    </form>
+    
+</body>
+</html>
