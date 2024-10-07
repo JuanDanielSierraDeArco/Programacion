@@ -38,3 +38,16 @@ header nav ul li {
 header nav ul li {
     text-decoration: none;
 }
+
+button {
+    padding: 0.5em  1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5555;
+
+}
