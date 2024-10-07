@@ -21,3 +21,20 @@ header, footer {
 div {
     padding: 1em;
 }
+nav {
+    text-align: right;
+    color: white;
+    font-size: 20;
+    margin-right: 2em;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    gap: 2em;
+}
+header nav ul li {
+    text-decoration: none;
+}
+header nav ul li {
+    text-decoration: none;
+}
