@@ -9,7 +9,7 @@ section {
     margin: 1em 0;
     padding: 1em;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px 40px;
 }
 
 header, footer {
@@ -18,27 +18,37 @@ header, footer {
     text-align: center;
     padding: 1em 0;
 }
-div {
-    padding: 1em;
-}
 nav {
-    text-align: right;
-    color: white;
-    font-size: 20;
-    margin-right: 2em;
-    font-weight: 600;
+    align-items: center;
 }
+
 nav ul {
     display: flex;
+    justify-content: center;
+    list-style: none;
     gap: 2em;
 }
-header nav ul li {
-    text-decoration: none;
+
+nav ul li {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
 }
-header nav ul li {
+
+nav ul li a {
+    color: white;
+    padding: 0.5em 1em;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+div {
+    padding: 1em;
+}
 button {
     padding: 0.5em  1em;
     background-color: #333;
@@ -50,4 +60,8 @@ button {
 button:hover {
     background-color: #5555;
 
+}
+span {
+    color: black;
+    font-weight: 600;
 }
