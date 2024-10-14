@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout con flexbox</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor{
+            display: flex;
+            justify-items: space-around;
+            width: 90%;
+            background-color: aquamarine;
+            height: 400px;
+        }
+        .caja{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            width: 31%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">Esta es mi caja 1</div>
+        <div class="caja">Esta es mi caja 2</div>
+        <div class="caja">Esta es mi caja 3</div>
+    </div>
+</body>
+</html>
