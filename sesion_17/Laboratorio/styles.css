@@ -4,20 +4,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #cfd5f1;
     color: #333;
 }
-/**/
+
 header {
+    height: 140px; /* Ajusta la altura del header */
+    width: 100%;
+    background: radial-gradient(circle, #080535, #091961);
     display: flex;
     justify-content: center;
-    background-color: #4caf50;
     text-align: center;
     padding: 20px;
     color: white;
 }
 img {
-    height: 120px;
+    height: 140px;
     width: 120px;
+    margin-top: 2px;
     border-radius: 50%;
     border: 2px black;
     box-shadow: 3px black
@@ -28,7 +32,48 @@ header div {
     width: 130px;
     height: 130px;
 }
-header h1 {
-    padding: 18px 0px;
+header section {
+    padding: 10px 0px;
     flex-grow: 1;
+
+}
+header section h1 {
+    padding: 0;
+    margin: 10px;
+}
+header section h2 {
+    padding: 0;
+    margin: 10px;
+}
+header section p {
+    padding: 0;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.perfil_personal, .habilidades {
+    margin: 5px 20px;
+    margin: 15px;
+    background-color: #dddaec;
+    border-radius: 10px;
+    font-style: italic;
+}
+.perfil_personal:hover{
+    text-align: center;
+    margin: 10px;
+    font-size: 20PX;
+}
+.perfil_personal h2, p {
+    margin: 10px;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding: 10px;
+}
+.habilidades ul li:hover {
+    cursor: pointer;
+    font-weight: 500;
+    font-size:x-large;
+    text-align: center;
 }
