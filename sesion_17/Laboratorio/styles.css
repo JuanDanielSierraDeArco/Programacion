@@ -60,7 +60,6 @@ header section p {
 }
 .perfil_personal:hover{
     text-align: center;
-    margin: 10px;
     font-size: 20PX;
 }
 .perfil_personal h2, p {
@@ -72,7 +71,6 @@ header section p {
     padding: 10px;
 }
 .habilidades ul li:hover {
-    cursor: pointer;
     font-weight: 500;
     font-size:x-large;
     text-align: center;
