@@ -18,9 +18,10 @@
     </header>
     <!--seccion biografia-->
     <section class="perfil_personal">
+      <button onclick="mostrarMensaje()" >Bienvenidos</button>
       <h2>PERFIL PERSONAL</h2>
       <p>
-        Soy un ingeniero electrónico apasionado por la innovación y la
+        Soy un ingeniero electrónico apasionado por la innovación y lagithub
         resolución de problemas complejos. Me especializo en el diseño,
         desarrollo y mantenimiento de sistemas electrónicos, y busco
         constantemente oportunidades para aplicar mis habilidades en
@@ -34,7 +35,7 @@
       </p>
     </section>
     <section class="habilidades">
-      <h2>Habilidades</h2>
+      <h2>HABILIDADES</h2>
       <ul>
         <li>HTML5</li>
         <li>CSS</li>
@@ -46,9 +47,9 @@
         <li>GITHUB</li>
       </ul>
     </section>
-    <section>
+    <section class="formulario">
       <h2>Formulario de contacto</h2>
-      <form action="">
+      <form action="" onsubmit="return validarformulario()">
         <label for="nombre">Nombre :</label>
         <input
           type="text"
@@ -65,7 +66,7 @@
           placeholder="Ingresa tu correo electrónico"
         /><br />
 
-        <button type="submit">Enviar</button>
+        <button type="submit" >Enviar</button>
       </form>
     </section>
     <!-- Pie de pagina-->
@@ -83,5 +84,8 @@
           </li>
         </ul>
     </footer>
+    <script src="app.js">
+
+    </script>
   </body>
 </html>
