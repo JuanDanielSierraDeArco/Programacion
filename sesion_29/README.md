@@ -1,2 +1,3 @@
-# Proyecto-Teach
-Laboratorio 29-30-31 bootcamp TalentoTeach
+# Proyecto
+
+Proyecto final bootcamps de programacion basica
